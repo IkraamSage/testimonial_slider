@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testemonial Slider</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="slider.css" />
+  </head>
+  <body>
+    <!-- Slides  -->
+
+    <div class="owl-carousel">
+      <div class="slide slide-1">
+        <img class="img" src="./images/ikraam.jpg" alt="picture of ikraam" />
+        <div class="info">
+          <h1>Ikraam Sage</h1>
+          <h2>Developer</h2>
+          <q
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+            necessitatibus. Voluptatem voluptas blanditiis autem, eum quis
+            debitis eligendi quaerat recusandae aliquam? Officiis voluptates
+            iure earum possimus debitis necessitatibus, impedit cumque.</q
+          >
+        </div>
+      </div>
+      <div class="slide slide-2">
+        <img class="img" src="./images/Naeemah.jpg" alt="Naeemah picture" />
+        <div class="info">
+          <h1>Naeemah Davis</h1>
+          <h2>software engineer</h2>
+          <q
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            deleniti tenetur sed, maiores voluptas delectus. Autem a, fuga minus
+            asperiores quaerat maxime architecto quasi adipisci? Neque omnis
+            doloremque nulla maiores!</q
+          >
+        </div>
+      </div>
+      <div class="slide slide-3">
+        <img class="img" src="./images/Devin.jpg" alt="Devin picture" />
+        <div class="info">
+          <h1>Devin Fledermaus</h1>
+          <h2>Manager</h2>
+          <q
+            >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+            iste commodi ipsum quas! Ducimus nihil placeat eaque illum harum.
+            Ipsa soluta voluptatum minima! Harum explicabo alias enim illum at
+            corporis.</q
+          >
+        </div>
+      </div>
+      <div class="slide slide-4">
+        <img class="img" src="./images/Aneeqah.jpg" alt="Aneeqah picture" />
+        <div class="info">
+          <h1>Aneeqah Jones</h1>
+          <h2>Web Developer</h2>
+          <q
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            voluptate quis, laborum ea nobis officia impedit architecto soluta
+            provident quod facere! Asperiores excepturi possimus illum
+            consequuntur inventore expedita optio ducimus?</q
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Script tags under here -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          margin: 50,
+          loop: true,
+          stagePadding: 100,
+          dots: false,
+          autoplay: true,
+          responsive: {
+            0: {
+              margin: 10,
+              stagePadding: 0,
+            },
+            500: {
+              margin: 20,
+              stagePadding: 20,
+            },
+            720: {
+              margin: 50,
+              stagePadding: 100,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
